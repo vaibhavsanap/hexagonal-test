@@ -1,0 +1,38 @@
+app:
+  name: "go-hexagonal"
+  version: "v0.1.0"
+  debug: true
+  env: github
+http_server:
+  addr: ":3000"
+  pprof: false
+  default_page_size: 10
+  max_page_size: 100
+  read_timeout: "60s"
+  write_timeout: "60s"
+log:
+  log_save_path: /tmp/logs
+  log_file_name: ""     # FIXME
+  log_file_ext: .log
+mysql:
+  user: "root"
+  password: "root"
+  host: "localhost"
+  port: 3306
+  database: "hexagonal"      # FIXME
+  max_idle_conns: 50
+  max_open_conns: 100
+  max_life_time: "36000s"
+  max_idle_time: "3600s"
+  char_set: "utf8mb4"
+  parse_time: true
+  time_zone: "Asia%2fShanghai"
+redis:
+  addr: "localhost:6379"
+  username: ""
+  password: ""
+  db: 0
+  pool_size: 300
+  idle_timeout: 30
+  min_idle_conns: 100
+
